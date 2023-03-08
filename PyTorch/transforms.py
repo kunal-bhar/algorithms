@@ -60,7 +60,7 @@ my_transforms = transforms.Compose([
     transforms.RandomGrayscale(p=0.2),
     transforms.ToTensor(),
     transforms.Normalize(
-        mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5]
+        mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5] # this does nothing, check out mean/stdev for our particular data
     ),    
 ])
 
